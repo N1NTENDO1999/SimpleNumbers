@@ -10,7 +10,8 @@ namespace Rextester
     {
         public static void Main(string[] args)
         {
-
+		    string num = Console.ReadLine();
+		    Console.WriteLine(NumberConverter.Convert(Convert.ToInt32(num)));
         }
     }
     class PrimeNumbers
