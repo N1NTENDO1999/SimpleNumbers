@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
+using SimpleNumbers;
 
 namespace Rextester
 {
@@ -9,8 +10,7 @@ namespace Rextester
     {
         public static void Main(string[] args)
         {
-            foreach (int elem in PrimeNumbers.GetPrimeNumbers(100))
-                Console.WriteLine(elem + " ");
+
         }
     }
     class PrimeNumbers
