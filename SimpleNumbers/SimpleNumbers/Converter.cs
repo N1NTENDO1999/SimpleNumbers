@@ -12,14 +12,7 @@ namespace SimpleNumbers
             int remainder;
             while (Math.Abs(number) != 0)
             {
-                if (Equals(number % 2, 0))
-                {
-                    remainder = 0;
-                }
-                else
-                {
-                    remainder = 1;
-                }
+                remainder = number % 2;
                 boolNumber += remainder.ToString();
                 number /= 2;
             }
