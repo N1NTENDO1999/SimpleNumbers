@@ -10,7 +10,7 @@ namespace SimpleNumbers
         {
             string boolNumber = "";
             int remainder;
-            while (Math.Abs(number) != 1)
+            while (Math.Abs(number) != 0)
             {
                 if (Equals(number % 2, 0))
                 {
@@ -23,7 +23,9 @@ namespace SimpleNumbers
                 boolNumber += remainder.ToString();
                 number /= 2;
             }
-            return boolNumber;
+            char[] charArray = boolNumber.ToCharArray();
+            Array.Reverse(charArray);
+            return new string(charArray);
         }
     }
 }
